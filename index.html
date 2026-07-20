@@ -1,85 +1,362 @@
 <!DOCTYPE html>
+
 <html lang="pt-BR">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Quarta da Sorte</title>
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style.css">
+    <title>🍀 Quarta da Sorte</title>
+
+    <link rel="stylesheet"
+    href="style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+
+
 </head>
+
+
 
 <body>
 
-    <header class="topo">
-        <h1>✨ Quarta da Sorte ✨</h1>
-        <p>Escolha seu bilhete da sorte</p>
-    </header>
 
 
-    <section class="banner">
-        <div class="conteudo-banner">
-            <h2>🍀 Boa sorte!</h2>
-            <p>
-                Participe e concorra aos prêmios
+
+
+    <!-- Fundo Decorativo -->
+    <div class="bg-decoracao"></div>
+
+
+    <div class="trevos-fundo">
+
+        <img src="img/trevos.png" class="t t1">
+        <img src="img/trevos.png" class="t t2">
+        <img src="img/trevos.png" class="t t3">
+        <img src="img/trevos.png" class="t t4">
+        <img src="img/trevos.png" class="t t5">
+        <img src="img/trevos.png" class="t t6">
+        <img src="img/trevos.png" class="t t7">
+        <img src="img/trevos.png" class="t t8">
+
+    </div>
+
+    <!-- ====== HEADER === -->
+
+    <header class="hero">
+
+        <div class="luzes">
+
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </div>
+
+
+
+
+        <img src="img/flores.png" class="flor flor1">
+        <img src="img/flores.png" class="flor flor2">
+        <img src="img/trevos.png" class="trevo trevo1">
+        <img src="img/trevos.png" class="trevo trevo2">
+        <img src="img/trevos.png" class="trevo trevo3">
+
+        <img src="img/moeda.png" class="moeda moeda1">
+        <img src="img/moeda.png" class="moeda moeda2">
+
+        <div class="brilho brilho1"></div>
+        <div class="brilho brilho2"></div>
+
+        <div class="estrelas">
+
+            <span>✨</span>
+            <span>⭐</span>
+            <span>✨</span>
+            <span>💖</span>
+            <span>✨</span>
+
+        </div>
+
+
+
+        <div class="hero-left">
+
+            <img
+            <div class="hero-left">
+
+            <img
+            src="img/gato.png"
+            class="gato">
+            <div class="brilho"></div>
+        </div>
+
+
+
+    </div>
+
+
+
+
+    <div class="hero-center">
+
+        <h1 class="titulo1">
+            Quarta
+        </h1>
+
+        <h2 class="titulo2">
+            da Sorte
+        </h2>
+
+        <div class="slogan">
+
+            🤍 SUA SORTE COMEÇA AQUI! 🤍
+
+            <button onclick="configurarSorteioManual()">
+                 ☘
+            </button>
+
+        </div>
+
+        <div class="vantagens">
+
+            <div class="item">
+                🛡️ Compra 100% Segura
+            </div>
+
+            <div class="item">
+                🔒 Seus Dados Protegidos
+            </div>
+
+            <div class="item">
+                🏆 Sorteio Transparente
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="hero-right">
+
+        <div class="premio">
+
+            <small>PRÊMIO PRINCIPAL</small>
+
+            <h3>
+                R$ 500,00
+            </h3>
+
+        </div>
+
+
+        <div class="proximo">
+
+            <small>PRÓXIMO SORTEIO</small>
+
+            <p id="dataSorteio">
+
+                30/04/2025
+
             </p>
 
-            <button id="btnComprar">
-                Comprar Bilhete
-            </button>
-        </div>
-    </section>
+            <p class="hora">
 
+                🕗 20:00:00
 
-    <section class="area-bilhetes">
-
-        <h2>🎟️ Bilhetes Disponíveis</h2>
-
-        <div id="listaBilhetes" class="lista-bilhetes">
-            <!-- Os bilhetes serão carregados pelo JavaScript -->
-        </div>
-
-    </section>
-
-
-    <section class="premios">
-
-        <h2>🏆 Prêmios</h2>
-
-        <div class="cards-premios">
-
-            <div class="card">
-                <h3>🥇 1º Prêmio</h3>
-                <p>Grande prêmio da semana</p>
-            </div>
-
-
-            <div class="card">
-                <h3>🥈 2º Prêmio</h3>
-                <p>Prêmio especial</p>
-            </div>
-
-
-            <div class="card">
-                <h3>🥉 3º Prêmio</h3>
-                <p>Mais uma chance de ganhar</p>
-            </div>
+            </p>
 
         </div>
 
-    </section>
+    </div>
 
 
-    <footer>
 
-        <p>
-            © Quarta da Sorte - Boa sorte 🍀
-        </p>
-
-    </footer>
+</header>
 
 
+<!--   <div id="numerosManuaisTela" class="numeros-manuais"></div></br>-->
+
+    <div class="hero-center">
+
+    
+    
+<section class="barra-sorteio">
+<p>  O sorteio será realizado com base no resultado da Quina da Loteria Federal da Caixa Econômica Federal! o ganhador será o participante que tiver o número que coincidir com os [Primeiros 4 algarismos] do sorteio da Quina! </p></br>
+<p>Exemplo: Se o prêmio da Quina sorteado for 13,20,33,56,65, o ganhador da QUARTA DA SORTE será quem escolheu o bilhete com a sequência de número 13,20,33,56 (considerando que o último dígito 65, seja o numero do 2 bilhete sorteado ).</p>
+<!--
+<button id="btnTodos">
+Como funciona ?
+</button>
+-->
+</section>
+
+
+
+     </div>
+</br>
+
+<!-- ================= ESTATÍSTICAS ================= -->
+
+<section class="estatisticas">
+
+<div class="info">
+
+<span>🎟 Bilhetes Totais</span>
+
+<!-- ==== <strong id="totalBilhetes">
+                            200
+                        </strong>========= -->
+<strong id="totalBilhetes"></strong>
+
+</div>
+
+
+<div class="info">
+
+<span>✅ Disponíveis</span>
+
+<strong id="disp">
+0
+</strong>
+
+</div>
+
+
+<div class="info">
+
+<span>🟡 Reservados</span>
+
+<strong id="res">
+0
+</strong>
+
+</div>
+
+
+<div class="info">
+
+<span>❤️ Vendidos</span>
+
+<strong id="vend">
+0
+</strong>
+
+</div>
+
+
+</section>
+
+
+<!-- ================= FILTROS ================= -->
+
+<section class="barra-filtros">
+
+<button id="btnTodos">
+Todos
+</button>
+
+<button id="btnDisponiveis">
+Disponíveis
+</button>
+
+<button id="btnReservados">
+Reservados
+</button>
+
+<button id="btnVendidos">
+Vendidos
+</button>
+
+<input
+
+type="text"
+
+id="buscar"
+
+placeholder="Buscar bilhete..."
+
+>
+
+</section>
+
+
+<!-- ================= BILHETES ================= -->
+
+<main>
+
+<section
+
+id="tickets"
+
+class="grid-bilhetes">
+
+<!-- Os cartões serão criados pelo JavaScript -->
+
+</section>
+
+</main>
+
+
+<!-- ================= RODAPÉ ================= -->
+
+<footer>
+
+<div>
+
+🔒 Site 100% Seguro
+
+</div>
+
+<div class="pix-info">
+
+<img src="img/pix.png" class="pix-icon">
+
+<span>PIX Todas as Quartas</span>
+
+</div>
+<div>
+
+🍀 Boa Sorte!
+
+</div>
+
+</footer>
+
+
+<button id="btnAdmin" onclick="abrirAdmin()">
+⚙️
+</button>
+
+<div id="menuAdmin" style="display:none;">
+<button onclick="liberarTodos()">🔵 Liberar Todos</button>
+<button onclick="fazerBackup()">💾 Backup</button>
+<button onclick="restaurarBackup()">📂 Restaurar</button>
+<button onclick="alterarData()">📅 Data</button>
+
+<button onclick="gerarNovosBilhetes()">
+🎟 Gerar Novos Bilhetes
+</button>
+
+</div>
+
+
+<!-- ================= SCRIPTS ================= -->
+
+<!-- Firebase -->
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
+<!-- Seu script -->
 <script src="script.js"></script>
-
 </body>
+
 </html>
